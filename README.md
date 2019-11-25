@@ -1,4 +1,6 @@
-# Panda Simulator
+# Panda Simulator [![Build Status](https://travis-ci.org/justagist/panda_simulator.svg?branch=master)](https://travis-ci.org/justagist/panda_simulator)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A **Gazebo simulator** for the Franka Emika Panda robot with ROS interface, providing exposed **controllers** and real-time **robot state feedback** similar to the real robot when using the [*franka-ros*][franka-ros] package.
 ## Features
@@ -22,6 +24,7 @@ A **Gazebo simulator** for the Franka Emika Panda robot with ROS interface, prov
  - *franka-ros* (`sudo apt install ros-<version>-franka-ros` or [install from source][libfranka-doc])
  - [*franka_ros_interface*][fri-repo] (at least the *franka_core_msgs* package from *franka_ros_interface* should be installed)
  - [*franka_panda_description*][fpd-repo] (urdf and model files from *panda_description* package modified to work in Gazebo, and with the custom controllers)
+ - [*sns_ik*](https://github.com/RethinkRobotics-opensource/sns_ik)
  
 ### Installation
 Once the above dependencies are installed, the package can be installed using catkin_make:
@@ -69,8 +72,7 @@ Controller manager service can be used to switch between all available controlle
 The [*franka_ros_interface*][fri-repo] package provides Python API and interface tools to control and communicate with the robot using the ROS topics and services exposed by the simulator. Since the simulator exposes similar information and controllers as the *robot_state_controller_node* of the [*franka_ros_interface*][fri-repo], the API can be used to control both the real robot, and the simulated robot in this package, with minimum change in code.
 
 #### License
-
-Apache 2.0
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
    [fri-repo]: <https://github.com/justagist/franka_ros_interface>
