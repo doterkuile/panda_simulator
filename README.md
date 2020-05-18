@@ -45,3 +45,16 @@ The following dependencies can be installed using the `.rosinstall` file (instru
     catkin build # if catkin not found, install catkin tools (apt install python-catkin-tools)
     source devel/setup.bash
 ```
+
+#### License
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Copyright (c) 2019-2020, Saif Sidhik
+
+If you use this software, please cite it using [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3747459.svg)](https://doi.org/10.5281/zenodo.3747459).
+
+   [fri-repo]: <https://github.com/justagist/franka_ros_interface>
+   [fpd-repo]: <https://github.com/justagist/franka_panda_description>
+   [libfranka-doc]: <https://frankaemika.github.io/docs/installation_linux.html#building-from-source>
+   [franka-ros]: <https://frankaemika.github.io/docs/franka_ros.html
