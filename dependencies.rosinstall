@@ -4,9 +4,17 @@
     version: master
 - git:
     local-name: franka_panda_description
-    uri: https://github.com/JustaGist/franka_panda_description
+    uri: https://github.com/doterkuile/franka_panda_description.git
     version: master
 - git:
     local-name: orocos_kinematics_dynamics
     uri: https://github.com/orocos/orocos_kinematics_dynamics
     version: master
+- git:
+    local-name: realsense_gazebo_plugin
+    uri: https://github.com/pal-robotics/realsense_gazebo_plugin.git
+    version: melodic-devel
+- git:
+    local-name: realsense-ros
+    uri: https://github.com/doterkuile/realsense-ros.git
+    version: development

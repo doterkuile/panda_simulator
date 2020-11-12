@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+
+
+  <arg name="debug" default="false" />
+
+ 
+  <rosparam 
+	command="load" 
+	file="$(find panda_simulator_examples)/config/panda_arm.yaml"
+	/>
+
+  <node 
+	name="object_scanner" 
+	pkg="panda_simulator_examples" 
+	type="move_arm" 
+	output="screen"
+	/>
+
+
+
+</launch>
